@@ -1,0 +1,129 @@
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right rgb(19, 17, 17) 0%,orange  100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgb(52, 2, 71) ,grey)
+}
+.box{
+    position: relative;
+    background:rgba(4, 203, 238, 0.6) ;
+    width: 525px;
+    backdrop-filter:blur(15px) ;
+    padding: 20px;
+    border-radius: 20px;
+    transition: box-shaow 500ms ease;
+    height: 550px;
+}
+.box  h4{
+    text-align: center;
+    margin-bottom: 20px ;
+    font-size:1.2rem ;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right,purple, brown);
+    margin-top: 40px;
+    height: 30px;
+    align-items: center;
+}
+ .box .date-picker {
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.box .date-picker input{
+  
+    margin: 0 10px;;
+    border: 0;
+    padding: .5rem;
+    border-radius: 10px;
+    transition: box-shaow 500ms ease;
+    width: 180px;
+}
+
+
+.box .date-picker input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #292929;
+}
+.box .date-picker span{
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+.box .date-picker span#choseDate{
+    margin-left: auto;
+}
+.age-calc{
+    position: relative ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 500px;
+} 
+.age-calc .age-box{
+    position: relative;
+    background:#fff;
+    border-radius: 10px;
+    margin: 10px;
+    width: 222px;
+    transition: 500mx ease;
+}
+.age-calc .age-box p.header{
+    position: relative;
+    text-align: center;
+    background-color: rgb(71, 10, 100);
+    padding: 10px 30px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.1rem;
+    font-size: 500;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+.age-calc .age-box:nth-child(even) p.header{
+    background:rgba(170, 44, 6, 0.979);
+}
+.age-calc .age-box .value{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1,3rem;
+    transition: 500ms ease;
+    font-weight: 800;
+}
+@media(max-width:768px){
+    body{
+        display: block;
+        margin: 2rem 0;
+    }
+    .box{
+        width: 600px;
+        margin: 0 auto;
+
+    }
+    .age-calc .age-box{
+        width: 150px;
+        margin: 15px;
+        margin-top: 30px;
+    }
+}
