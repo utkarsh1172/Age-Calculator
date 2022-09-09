@@ -112,18 +112,17 @@ body{
     font-weight: 800;
 }
 @media(max-width:768px){
-    body{
-        display: block;
-        margin: 2rem 0;
-    }
     .box{
-        width: 600px;
-        margin: 0 auto;
+       width: 450px;
+       padding: auto;
 
     }
     .age-calc .age-box{
-        width: 150px;
-        margin: 15px;
-        margin-top: 30px;
+        width: 180px;
+        padding: auto;
+      
+    }
+    h4{
+        width: 400px;
     }
 }
